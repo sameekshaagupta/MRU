@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Lexend&display=swap');
+body, html {
+    background-color: rgb(221, 221, 221);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.output-tables {
+    color: white;
+    font-family: "Lexend", sans-serif;
+}
+
+.nav-bar, .main-container, .output-tables {
+    display: flex;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    margin: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 80px;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    font-size: 40px;
+    justify-content: center;
+    align-content: center;
+}
+#output{
+    border: 2px solid white;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.main-container {
+    height: 100%;
+    flex-direction:unset
+}
+
+.output-tables {
+    border: 1px solid white;
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+}
+
+#outputTable, #gnattChart{
+    color: white;
+    font-family: "Lexend", sans-serif;
+    border: solid 1px white;
+    border-collapse: collapse;
+    margin: 2%;
+}
+
+th, td {
+    border: 1px solid white;
+}
+
+h2, label, button, .nav-bar a {
+    font-size: 1em;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+label, input {
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: solid 1px white;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.reset{
+    background-color: transparent;
+    cursor: pointer;
+    border: solid 1px white;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    width: 60px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.input-container, .output-container {
+    background-color: black;
+    padding: 1%;
+    border-radius: 2%;
+    margin: 1%;
+}
+
+.input-container {
+    flex: 1;
+    height: 35%;
+    font-size: 20px;
+}
+
+.output-container {
+    flex: 3;
+    height: 70%;
+    font-size: 20px;
+}
+
+/* Existing styles above */
+
+@media only screen and (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+
+    .input-container, .output-container {
+        margin: 1% 5%; /* Adjust margins for better spacing */
+    }
+}

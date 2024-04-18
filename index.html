@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MRU Paged Allocation</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav class="nav-bar">
+        <h2>MRU Paged Allocation</h2>
+    </nav>
+
+    <div class="main-container">
+        <div class="input-container">
+            <h2>Input</h2>
+            <form name="input-form">
+                <label>Frame Size</label>
+                <input type="text" name="frameSizeForm" placeholder="eg. 4">
+
+                <label>Page Numbers</label>
+                <input type="text" name="pageNumbersForm" placeholder="eg. 1 1 2 1 1 2 3">
+                <button type="button" onClick="runMRU(this.form)">Process</button>
+                <a  class="reset" href="">Reset</a>
+            </form>
+        </div>
+
+        <div class="output-container">
+            <h2>Output</h2>
+            <div class="output-tables">
+                <table id="output"></table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
